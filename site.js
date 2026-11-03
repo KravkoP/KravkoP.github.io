@@ -4,13 +4,10 @@
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   root.classList.add("js");
 
-  // The app catalog is the single source: counts and the hero icon wall come from its cards.
+  // The app catalog is the single source: the hero count and icon wall come from its cards.
   var cards = document.querySelectorAll(".grid .card");
   if (cards.length) {
-    var counts = { apps: cards.length, docs: document.querySelectorAll(".grid .card-links a").length };
-    document.querySelectorAll("[data-count]").forEach(function (el) {
-      el.textContent = counts[el.getAttribute("data-count")];
-    });
+    document.querySelectorAll("[data-count]").forEach(function (el) { el.textContent = cards.length; });
     var tilt = document.querySelector(".wall-tilt");
     if (tilt) {
       var COLUMNS = 3, ICON_STEP = 146, MIN_LOOP = 800; // icon + gap, and px each marquee half must cover
