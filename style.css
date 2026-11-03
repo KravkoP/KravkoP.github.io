@@ -141,10 +141,11 @@ img, svg { display: block; }
 
 /* Icon wall: decorative, duplicated, hidden from assistive tech */
 .wall { position: relative; height: 640px; perspective: 1400px; -webkit-mask-image: linear-gradient(transparent, #000 16%, #000 84%, transparent); mask-image: linear-gradient(transparent, #000 16%, #000 84%, transparent); }
-.wall-tilt { display: flex; justify-content: center; gap: 18px; height: 100%; transform: scale(.86) rotateX(10deg) rotateY(-16deg) rotateZ(5deg); transform-style: preserve-3d; }
-.wall-col { display: flex; flex-direction: column; gap: 18px; width: 128px; flex: none; animation: drift 46s linear infinite; }
-.wall-col:nth-child(2) { animation-direction: reverse; animation-duration: 58s; margin-top: -40px; }
-.wall-col:nth-child(3) { animation-duration: 52s; }
+.wall-tilt { display: flex; align-items: flex-start; justify-content: center; gap: 18px; height: 100%; transform: scale(.86) rotateX(10deg) rotateY(-16deg) rotateZ(5deg); transform-style: preserve-3d; }
+/* Duration is set in site.js so the speed stays the same for any number of apps. */
+/* The negative margin keeps icons above the top edge at every point of the loop. */
+.wall-col { display: flex; flex-direction: column; gap: 18px; width: 128px; flex: none; margin-top: -292px; animation: drift 60s linear infinite; will-change: transform; }
+.wall-col:nth-child(2) { animation-direction: reverse; margin-top: -365px; }
 .wall-col img { width: 128px; height: 128px; flex: none; border-radius: 29px; box-shadow: var(--shadow), 0 0 0 1px var(--border); }
 @keyframes drift { to { transform: translateY(calc(-50% - 9px)); } }
 

@@ -10,15 +10,17 @@
     document.querySelectorAll("[data-count]").forEach(function (el) { el.textContent = cards.length; });
     var tilt = document.querySelector(".wall-tilt");
     if (tilt) {
-      var COLUMNS = 3, ICON_STEP = 146, MIN_LOOP = 800; // icon + gap, and px each marquee half must cover
+      var COLUMNS = 3, ICON_STEP = 146, MIN_LOOP = 1100; // icon + gap, and px each marquee half must cover
+      var SPEEDS = [7, 5.6, 6.3]; // px per second, per column
       var sets = [[], [], []];
       cards.forEach(function (c, i) { sets[i % COLUMNS].push(c.querySelector(".app-icon").getAttribute("src")); });
-      sets.forEach(function (set) {
+      sets.forEach(function (set, c) {
         if (!set.length) return;
         var col = document.createElement("div");
         col.className = "wall-col";
         // Two identical halves keep the loop seamless at -50%.
         var total = 2 * Math.ceil(MIN_LOOP / (set.length * ICON_STEP));
+        col.style.animationDuration = (total / 2) * set.length * ICON_STEP / SPEEDS[c] + "s";
         for (var n = 0; n < total; n++) {
           set.forEach(function (src) {
             var img = new Image(128, 128);
