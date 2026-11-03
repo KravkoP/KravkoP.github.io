@@ -15,48 +15,70 @@
 <a class="skip" href="#content">Skip to content</a>
 <header class="topbar"><div class="topbar-in"><a class="brand" href="../../" aria-label="BebraSoftAI"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4df0a0"/><stop offset="1" stop-color="#59b8ff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#m)"/><path d="M10 7.5h7.2c3.3 0 5.3 1.8 5.3 4.4 0 1.8-1 3.2-2.5 3.8 2 .5 3.3 2.2 3.3 4.3 0 3-2.3 4.9-5.8 4.9H10zM14 11v4h2.5c1.3 0 2-.8 2-2s-.7-2-2-2zM14 18.200v3.300h3c1.400 0 2.200-.6 2.200-1.700s-.8-1.600-2.200-1.600z" fill="#04130d" fill-rule="evenodd"/></svg><span>BebraSoft<b>AI</b></span></a><nav class="nav"><a href="../../#apps">All apps</a><a class="opt" href="../../#contact">Contact</a></nav><button class="theme-btn" type="button" aria-label="Toggle color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.500 14.500A8.500 8.500 0 0 1 9.500 3.500a8.500 8.500 0 1 0 11 11z"/></svg></button></div></header>
 <div class="doc-shell">
-<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#1-on-device-flashlight-control-call-detection">1. On-Device Flashlight Control & Call Detection</a></li><li><a href="#2-information-collected-by-third-party-sdks">2. Information Collected by Third-Party SDKs</a></li><li><a href="#3-links-to-our-other-apps">3. Links to Our Other Apps</a></li><li><a href="#4-consent-privacy-choices-gdpr-uk-us-states">4. Consent &amp; Privacy Choices (GDPR / UK / US States)</a></li><li><a href="#5-data-retention-deletion">5. Data Retention &amp; Deletion</a></li><li><a href="#6-children">6. Children</a></li><li><a href="#7-contact-us">7. Contact Us</a></li></ol></nav>
+<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#1-what-the-app-uses-on-your-phone">1. What the App uses on your phone</a></li><li><a href="#2-data-stored-on-your-phone">2. Data stored on your phone</a></li><li><a href="#3-third-party-services">3. Third-party services</a></li><li><a href="#4-sharing-and-links">4. Sharing and links</a></li><li><a href="#5-your-choices">5. Your choices</a></li><li><a href="#6-retention-and-deletion">6. Retention and deletion</a></li><li><a href="#7-children">7. Children</a></li><li><a href="#8-security">8. Security</a></li><li><a href="#9-changes-to-this-policy">9. Changes to this policy</a></li><li><a href="#10-contact">10. Contact</a></li></ol></nav>
 <main id="content">
-<img class="doc-icon" src="../../assets/icons/flash-alerts.svg" alt="" width="72" height="72">
+<img class="doc-icon" src="../../assets/icons/flash-alerts.webp" alt="" width="72" height="72">
 <p class="crumb"><a href="../../">BebraSoftAI</a> / LED Flash Alerts</p>
 <h1>Privacy Policy — LED Flash Alerts Call Messages</h1>
 <p class="meta">
-<strong>Effective date:</strong> October 28, 2026<br>
+<strong>Effective date:</strong> November 3, 2026<br>
 <strong>Developer:</strong> BebraSoftAI<br>
 <strong>Contact:</strong> <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>
 </p>
+<p>LED Flash Alerts Call Messages ("the App") blinks your phone's camera flash when someone calls and when the apps you choose post a notification. This policy explains what the App uses, what stays on your phone and what third-party services receive.</p>
 
-
-<h2 id="1-on-device-flashlight-control-call-detection">1. On-Device Flashlight Control & Call Detection</h2>
+<h2 id="1-what-the-app-uses-on-your-phone">1. What the App uses on your phone</h2>
 <ul>
-<li><strong>Flashlight & Camera Hardware (<code>CAMERA</code>, <code>FLASHLIGHT</code>):</strong> Used solely to control the physical LED torch hardware on the back of your phone to create customizable light strobe blinking patterns. The App does <strong>not take photos, record video, or access camera images</strong>.</li>
-<li><strong>Incoming Event Detection:</strong> Uses standard Android system broadcast receivers to detect when the phone is ringing or receiving an SMS/app notification to trigger the flash alert. <strong>No message text, contact names, phone numbers, or conversation content are ever read, saved, or uploaded</strong>.</li>
-<li><strong>Battery & Do Not Disturb Controls:</strong> Battery status checks and quiet hours scheduling operate entirely on-device.</li>
+<li><strong>Phone state (<code>READ_PHONE_STATE</code>).</strong> Used only to learn that the phone is ringing, so the flash blinks until the call is answered, declined or missed. The App does not read phone numbers, contacts or the call log, and does not store or send the call state.</li>
+<li><strong>Notification access.</strong> If you turn it on, Android tells the App when a new notification is posted. To decide whether to blink, the App looks only at which app posted it, its category and system flags (for example, whether it is an ongoing or silent notification). The App does not read, store or send the title or text of notifications.</li>
+<li><strong>Your installed apps.</strong> The "Choose apps" screen shows apps that have a launcher icon so you can pick which ones make the flash blink. The list is read on the phone; only the package names you choose are saved in the App's settings on the phone. The list is never sent to us or to third parties.</li>
+<li><strong>Camera flash.</strong> The App switches the torch on and off through Android's camera service. It does not ask for the camera permission, does not open the camera, and does not take photos or record video.</li>
+<li><strong>Device conditions.</strong> To follow your "When not to flash" settings, the App checks on the phone whether the screen is on, the ringer mode, Do Not Disturb, the battery level and charging state, and the time. These checks are not stored or sent.</li>
 </ul>
 
+<h2 id="2-data-stored-on-your-phone">2. Data stored on your phone</h2>
+<p>The App saves your settings (alert switches, pattern, timing, brightness, chosen apps, quiet hours) and a few counters (number of launches, when an ad or a rating request was last shown) in its private storage on the phone. We do not have servers or user accounts and do not receive this data.</p>
+<p>If Android backup is turned on for your Google account, Android may include the App's settings in your device backup in your Google account (Android Auto Backup). This backup is managed by Google under your account; we cannot access it. Ad frequency counters are excluded from backup.</p>
 
-<h2 id="2-information-collected-by-third-party-sdks">2. Information Collected by Third-Party SDKs</h2>
-<p>The App integrates standard industry-leading third-party SDKs for advertising, analytics, crash reporting, and Google Play billing:</p>
+<h2 id="3-third-party-services">3. Third-party services</h2>
+<p>The App uses the following services. They may collect data under their own privacy policies:</p>
 <ul>
-<li><strong>Google Mobile Ads (AdMob) &amp; Mediation Partners:</strong> May collect your device's IP address (to infer approximate geographic region), Android Advertising ID (<code>AD_ID</code>), App Set ID, device technical specifications, and ad interaction events to serve relevant ads, measure impressions, and protect against fraudulent traffic.</li>
-<li><strong>Google Firebase (Analytics, Crashlytics, Remote Config):</strong> Collects anonymous app-instance identifiers, crash stack traces, and non-personal operational metrics to ensure app performance and stability.</li>
-<li><strong>Google Play Billing:</strong> All in-app purchases and subscriptions are handled directly and securely through Google Play. We do not store or process your financial card or bank details.</li>
+<li><strong>Google AdMob (Google Mobile Ads SDK) and mediation partners</strong> — AppLovin, Meta Audience Network, Unity Ads, Liftoff (Vungle), Mintegral and Pangle. To show ads, measure them and prevent fraud, they may collect the IP address (used to estimate approximate location), the Advertising ID and App Set ID, device and app information, and ad interactions. Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and <a href="https://support.google.com/admob/answer/9012903">https://support.google.com/admob/answer/9012903</a> (partners' policies are linked from there).</li>
+<li><strong>Google User Messaging Platform (UMP)</strong> — shows the consent form where the law requires it and stores your choice on the phone.</li>
+<li><strong>Firebase Analytics, Crashlytics and Remote Config (Google)</strong> — app-instance identifiers, usage events (for example, that a test flash was run or a screen was opened), crash reports and device information, used to improve stability and adjust settings such as ad frequency remotely. Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+<li><strong>Google Play Billing</strong> — handles the optional "Remove ads" purchase. We do not receive your card or payment details.</li>
+<li><strong>Google Play In-App Review</strong> — may show Google Play's rating card. Your rating is sent to Google Play; the App is not told whether or how you rated it.</li>
 </ul>
 
-<h2 id="3-links-to-our-other-apps">3. Links to Our Other Apps</h2>
-<p>The App may include an optional link or recommendation for our other apps (such as Danger Radar or Hidden Camera Detector). Tapping the link opens Google Play Store. No personal, usage, or sensor data is transferred.</p>
+<h2 id="4-sharing-and-links">4. Sharing and links</h2>
+<ul>
+<li><strong>Invite a friend</strong> opens Android's share menu with a short text and a Google Play link. You choose the app and the person; we do not see who you share with.</li>
+<li><strong>Rate the app</strong> opens the App's page in Google Play.</li>
+<li>We do not sell your data and do not share the data described in section 1 with anyone.</li>
+</ul>
 
-<h2 id="4-consent-privacy-choices-gdpr-uk-us-states">4. Consent &amp; Privacy Choices (GDPR / UK / US States)</h2>
-<p>Users in the European Economic Area (EEA), the United Kingdom, Switzerland, and relevant US states are presented with a Google User Messaging Platform (UMP) consent dialog. You can review or modify your consent choices at any time via <strong>Settings &rarr; Privacy Options</strong> inside the App, or by resetting your Advertising ID in your device's Android settings.</p>
+<h2 id="5-your-choices">5. Your choices</h2>
+<ul>
+<li>Users in the European Economic Area, the United Kingdom, Switzerland and other places where it is required see a consent form for ads. You can change your choice at any time with <strong>Ad privacy choices</strong> on the App's main screen (shown where it applies).</li>
+<li>You can reset or delete your Advertising ID in your phone's settings.</li>
+<li>You can turn off notification access or the phone permission at any time in Android Settings. The App then stops blinking for notifications or calls.</li>
+<li>Buying "Remove ads" turns off all ads in the App.</li>
+</ul>
 
-<h2 id="5-data-retention-deletion">5. Data Retention &amp; Deletion</h2>
-<p>We do not maintain user accounts, profiles, or remote databases. You can remove all locally stored app data and preferences at any time by clearing the App's storage via Android Settings or by uninstalling the App.</p>
+<h2 id="6-retention-and-deletion">6. Retention and deletion</h2>
+<p>Data stored by the App stays on your phone until you clear the App's storage in Android Settings or uninstall the App. Data collected by the third-party services above is kept according to their policies. To ask about data, contact us at the address below.</p>
 
-<h2 id="6-children">6. Children</h2>
-<p>The App is not directed at children under the age of 13 (or local legal minimum age), and we do not knowingly collect personal information from children.</p>
+<h2 id="7-children">7. Children</h2>
+<p>The App is not directed at children under 13 (or the minimum age in your country), and we do not knowingly collect personal information from children.</p>
 
-<h2 id="7-contact-us">7. Contact Us</h2>
-<p>If you have any questions or feedback regarding this Privacy Policy, please email us at <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>.</p>
+<h2 id="8-security">8. Security</h2>
+<p>Data sent by the services above travels over encrypted connections (HTTPS/TLS).</p>
+
+<h2 id="9-changes-to-this-policy">9. Changes to this policy</h2>
+<p>We may update this policy when the App changes. The new version is published at this address with a new effective date.</p>
+
+<h2 id="10-contact">10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a></p>
 </main>
 </div>
 <footer class="footer"><div class="footer-in"><p>&copy; 2026 BebraSoftAI. All rights reserved.</p><p><a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a></p></div></footer>
