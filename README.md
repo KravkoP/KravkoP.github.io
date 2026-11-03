@@ -14,6 +14,7 @@ Public site served by GitHub Pages at https://kravkop.github.io: the developer p
 
 - Never move or rename a policy page: these URLs are registered in Play Console. The same goes for `app-ads.txt`.
 - Copy on the home page must be backed by the app's own policy. No invented stats, ratings or testimonials.
+- After changing `site.js` or `style.css`, bump their `?v=` in `index.html`. Pages caches files for 10 minutes, and new HTML with a stale script leaves the hero icon wall empty.
 
 ## Adding an app
 
