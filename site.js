@@ -4,6 +4,37 @@
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   root.classList.add("js");
 
+  // The app catalog is the single source: counts and the hero icon wall come from its cards.
+  var cards = document.querySelectorAll(".grid .card");
+  if (cards.length) {
+    var counts = { apps: cards.length, docs: document.querySelectorAll(".grid .card-links a").length };
+    document.querySelectorAll("[data-count]").forEach(function (el) {
+      el.textContent = counts[el.getAttribute("data-count")];
+    });
+    var tilt = document.querySelector(".wall-tilt");
+    if (tilt) {
+      var COLUMNS = 3, ICON_STEP = 146, MIN_LOOP = 800; // icon + gap, and px each marquee half must cover
+      var sets = [[], [], []];
+      cards.forEach(function (c, i) { sets[i % COLUMNS].push(c.querySelector(".app-icon").getAttribute("src")); });
+      sets.forEach(function (set) {
+        if (!set.length) return;
+        var col = document.createElement("div");
+        col.className = "wall-col";
+        // Two identical halves keep the loop seamless at -50%.
+        var total = 2 * Math.ceil(MIN_LOOP / (set.length * ICON_STEP));
+        for (var n = 0; n < total; n++) {
+          set.forEach(function (src) {
+            var img = new Image(128, 128);
+            img.alt = "";
+            img.src = src;
+            col.appendChild(img);
+          });
+        }
+        tilt.appendChild(col);
+      });
+    }
+  }
+
   // Theme toggle. Follows the system until the visitor chooses.
   var systemDark = window.matchMedia("(prefers-color-scheme: dark)");
   function saved() { try { return localStorage.getItem("theme"); } catch (e) { return null; } }

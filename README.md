@@ -18,5 +18,5 @@ Public site served by GitHub Pages at https://kravkop.github.io: the developer p
 ## Adding an app
 
 1. Add `assets/icons/<slug>.webp` (or `.svg`).
-2. Copy an existing `<li class="reveal" data-cat="...">` card in `index.html`, and update the app and document counts in the hero and stats.
+2. Copy an existing `<li class="reveal" data-cat="...">` card in `index.html`. `site.js` builds the hero icon wall and the app and document counts from the catalog cards, so every document needs a link in its card. Then update the numbers in the HTML (the no-JS fallback), in the `description` and `og:description` meta tags, and in `assets/og.png`: these are read without running scripts.
 3. Copy `broken-screen/privacy/index.html` to `<slug>/privacy/index.html` and replace the content of `<main>`, the title, the icon and the contents list. Each `<h2>` needs an `id` that matches its contents link. A page that only links `style.css` also renders correctly, without the top bar.
