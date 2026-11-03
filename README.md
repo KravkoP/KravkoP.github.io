@@ -18,6 +18,8 @@ Public site served by GitHub Pages at https://kravkop.github.io: the developer p
 
 ## Adding an app
 
+Full guide with templates and pitfalls: `tools/portfolio-site.md` in the shared knowledge repository (`../_knowledge`). Short version:
+
 1. Add `assets/icons/<slug>.webp` (or `.svg`).
 2. Copy an existing `<li class="reveal" data-cat="...">` card in `index.html`. `site.js` builds the hero app count and icon wall from the catalog cards. Then update the number in the `<h1>` (the no-JS fallback), in the `description` and `og:description` meta tags, and in `assets/og.png`: these are read without running scripts.
 3. Copy `broken-screen/privacy/index.html` to `<slug>/privacy/index.html` and replace the content of `<main>`, the title, the icon and the contents list. Each `<h2>` needs an `id` that matches its contents link. A page that only links `style.css` also renders correctly, without the top bar.
