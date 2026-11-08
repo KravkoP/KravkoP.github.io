@@ -15,7 +15,7 @@
 <a class="skip" href="#content">Skip to content</a>
 <header class="topbar"><div class="topbar-in"><a class="brand" href="../../" aria-label="BebraSoftAI"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4df0a0"/><stop offset="1" stop-color="#59b8ff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#m)"/><path d="M10 7.5h7.2c3.3 0 5.3 1.8 5.3 4.4 0 1.8-1 3.2-2.5 3.8 2 .5 3.3 2.2 3.3 4.3 0 3-2.3 4.9-5.8 4.9H10zM14 11v4h2.5c1.3 0 2-.8 2-2s-.7-2-2-2zM14 18.200v3.300h3c1.400 0 2.200-.6 2.200-1.700s-.8-1.600-2.200-1.600z" fill="#04130d" fill-rule="evenodd"/></svg><span>BebraSoft<b>AI</b></span></a><nav class="nav"><a href="../../#apps">All apps</a><a class="opt" href="../../#contact">Contact</a></nav><button class="theme-btn" type="button" aria-label="Toggle color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.500 14.500A8.500 8.500 0 0 1 9.500 3.500a8.500 8.500 0 1 0 11 11z"/></svg></button></div></header>
 <div class="doc-shell">
-<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#1-about-the-app">1. About the app</a></li><li><a href="#2-accessibility-service">2. Accessibility service</a></li><li><a href="#3-information-the-app-handles-locally">3. Information the app handles locally</a></li><li><a href="#4-battery-buddy">4. Battery Buddy (optional)</a></li><li><a href="#5-third-party-services">5. Third-party services</a></li><li><a href="#6-consent-eea-uk-switzerland-and-us-states">6. Consent (EEA, UK, Switzerland and US states)</a></li><li><a href="#7-your-choices">7. Your choices</a></li><li><a href="#8-children">8. Children</a></li><li><a href="#9-data-retention-and-security">9. Data retention and security</a></li><li><a href="#10-your-rights">10. Your rights</a></li><li><a href="#11-changes">11. Changes</a></li><li><a href="#12-contact">12. Contact</a></li></ol></nav>
+<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#1-about-the-app">1. About the app</a></li><li><a href="#2-accessibility-service">2. Accessibility service</a></li><li><a href="#3-information-the-app-handles-locally">3. Information the app handles locally</a></li><li><a href="#4-third-party-services">4. Third-party services</a></li><li><a href="#5-consent-eea-uk-switzerland-and-us-states">5. Consent (EEA, UK, Switzerland and US states)</a></li><li><a href="#6-your-choices">6. Your choices</a></li><li><a href="#7-children">7. Children</a></li><li><a href="#8-data-retention-and-security">8. Data retention and security</a></li><li><a href="#9-your-rights">9. Your rights</a></li><li><a href="#10-changes">10. Changes</a></li><li><a href="#11-contact">11. Contact</a></li></ol></nav>
 <main id="content">
 <img class="doc-icon" src="../../assets/icons/emoji-battery.svg" alt="" width="72" height="72">
 <p class="crumb"><a href="../../">BebraSoftAI</a> / Emoji Battery</p>
@@ -27,7 +27,7 @@
 </p>
 
 <h2 id="1-about-the-app">1. About the app</h2>
-<p>Emoji Battery ("the app") lets you personalize how your battery looks: a custom status bar with a battery emoji, themes, stickers, a charging animation, pets that walk on your screen, home screen widgets and an optional Battery Buddy widget shared with a friend.</p>
+<p>Emoji Battery ("the app") lets you personalize how your battery looks: a custom status bar with a battery emoji, themes, stickers, a charging animation, pets that walk on your screen and home screen widgets.</p>
 
 <h2 id="2-accessibility-service">2. Accessibility service</h2>
 <p>The custom status bar, stickers, charging animation and on-screen pets are drawn with Android's Accessibility service. The app asks you to turn it on only after an in-app explanation, and you can turn it off at any time in the app or in <strong>Settings &rarr; Accessibility</strong>.</p>
@@ -40,23 +40,15 @@
 
 <h2 id="3-information-the-app-handles-locally">3. Information the app handles locally</h2>
 <ul>
-<li><strong>Battery level &amp; charging status:</strong> read from standard Android battery broadcasts on your device to draw the status bar, widgets and charging animation. It leaves your phone only if you use Battery Buddy (section 4).</li>
+<li><strong>Battery level &amp; charging status:</strong> read from standard Android battery broadcasts on your device to draw the status bar, widgets and charging animation. It never leaves your phone.</li>
+<li><strong>Widget photo:</strong> if you choose your own photo as a widget background, you pick it with Android's photo picker; the app gets only that one photo, keeps a copy in its own storage on your device and never uploads it.</li>
 <li><strong>Settings &amp; unlocks:</strong> chosen skins, themes, stickers, pets, favorites, sounds, language and prize wheel unlocks are saved on your device.</li>
 <li><strong>Purchases:</strong> subscriptions, one-time purchases and spin packs are handled by Google Play Billing. We never see or store payment details.</li>
-<li>No account is needed. The app does not access your contacts, photos, microphone, camera or location.</li>
+<li>No account is needed. The app does not access your contacts, photo library, microphone, camera or location, and we run no server of our own that stores your data.</li>
 </ul>
 
-<h2 id="4-battery-buddy">4. Battery Buddy (optional)</h2>
-<p>If you create or join a pair with a friend's code, the app sends the following to our database on Google Cloud Firestore, so that the person who has your code can see it:</p>
-<ul>
-<li>the nickname you enter (up to 24 characters),</li>
-<li>your selected pet, battery level, charging state and pet mood,</li>
-<li>the time of the last update and of the last "charge your phone" zap.</li>
-</ul>
-<p>There is no account and no other identifier: the random pair code is the only key. Nothing is sent unless you pair. When you unpair in the app, your record is deleted from the server. If you uninstall the app without unpairing, the record can stay on the server; email us with your pair code and we will delete it.</p>
-
-<h2 id="5-third-party-services">5. Third-party services</h2>
-<h3>5.1 Advertising — Google AdMob and mediation partners</h3>
+<h2 id="4-third-party-services">4. Third-party services</h2>
+<h3>4.1 Advertising — Google AdMob and mediation partners</h3>
 <p>The app shows full-screen ads (app open, interstitial and optional rewarded videos); it shows no banners. To serve ads, the Google Mobile Ads SDK and partner ad networks may collect:</p>
 <ul>
 <li>device IP address (for approximate location),</li>
@@ -74,40 +66,38 @@
 <li>Pangle — <a href="https://www.pangleglobal.com/privacy">pangleglobal.com/privacy</a></li>
 </ul>
 
-<h3>5.2 Analytics, crash reporting, configuration and database — Google Firebase</h3>
+<h3>4.2 Analytics, crash reporting and configuration — Google Firebase</h3>
 <ul>
 <li><strong>Google Analytics for Firebase:</strong> app usage and engagement events.</li>
 <li><strong>Firebase Crashlytics:</strong> crash traces and device metrics to fix errors.</li>
 <li><strong>Firebase Remote Config:</strong> technical settings (for example, ad frequency).</li>
-<li><strong>Cloud Firestore:</strong> Battery Buddy data only, as described in section 4.</li>
 </ul>
 <p>Google's privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
-<h2 id="6-consent-eea-uk-switzerland-and-us-states">6. Consent (EEA, UK, Switzerland and US states)</h2>
+<h2 id="5-consent-eea-uk-switzerland-and-us-states">5. Consent (EEA, UK, Switzerland and US states)</h2>
 <p>Users in applicable jurisdictions (EEA, UK, Switzerland, US states) are shown a Google User Messaging Platform (UMP) consent dialog. You can change your choice at any time in <strong>Settings &rarr; Privacy options</strong> in the app.</p>
 
-<h2 id="7-your-choices">7. Your choices</h2>
+<h2 id="6-your-choices">6. Your choices</h2>
 <ul>
 <li><strong>Accessibility service:</strong> turn it off in the app or in Android <strong>Settings &rarr; Accessibility</strong>; the widgets keep working.</li>
-<li><strong>Battery Buddy:</strong> unpair at any time to delete your data from the server.</li>
 <li><strong>Advertising ID:</strong> reset or delete it in Android <strong>Settings &rarr; Privacy &rarr; Ads</strong>.</li>
 <li><strong>Pro access:</strong> Pro turns off app open and interstitial ads.</li>
 <li><strong>Local data:</strong> clear the app's storage in Android Settings or uninstall the app to erase everything saved on your device.</li>
 </ul>
 
-<h2 id="8-children">8. Children</h2>
+<h2 id="7-children">7. Children</h2>
 <p>The app is intended for users aged 18 and over and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
-<h2 id="9-data-retention-and-security">9. Data retention and security</h2>
-<p>Battery Buddy data is kept only while the pair exists (see section 4). Data sent by the app and its SDKs is encrypted in transit using TLS/HTTPS.</p>
+<h2 id="8-data-retention-and-security">8. Data retention and security</h2>
+<p>Everything the app saves stays on your device until you clear the app's storage or uninstall it. Data sent by the SDKs in section 4 is encrypted in transit using TLS/HTTPS and kept under their own policies.</p>
 
-<h2 id="10-your-rights">10. Your rights</h2>
+<h2 id="9-your-rights">9. Your rights</h2>
 <p>Under the GDPR and other applicable privacy laws, you have the right to access, delete or object to processing of your personal data. Contact us at <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>.</p>
 
-<h2 id="11-changes">11. Changes</h2>
+<h2 id="10-changes">10. Changes</h2>
 <p>We may update this policy. Changes will be posted on this page with a new effective date.</p>
 
-<h2 id="12-contact">12. Contact</h2>
+<h2 id="11-contact">11. Contact</h2>
 <p>BebraSoftAI — <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a></p>
 </main>
 </div>
