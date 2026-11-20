@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metal Detector &amp; Rock ID - Privacy Policy</title>
+<meta name="description" content="Metal Detector &amp; Rock ID - Privacy Policy. BebraSoftAI, mobile app studio.">
+<meta name="theme-color" content="#06080c">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../style.css">
+<script src="../../site.js" defer></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar"><div class="topbar-in"><a class="brand" href="../../" aria-label="BebraSoftAI"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="m" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4df0a0"/><stop offset="1" stop-color="#59b8ff"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#m)"/><path d="M10 7.5h7.2c3.3 0 5.3 1.8 5.3 4.4 0 1.8-1 3.2-2.5 3.8 2 .5 3.3 2.2 3.3 4.3 0 3-2.3 4.9-5.8 4.9H10zM14 11v4h2.5c1.3 0 2-.8 2-2s-.7-2-2-2zM14 18.200v3.300h3c1.400 0 2.200-.6 2.200-1.700s-.8-1.600-2.200-1.600z" fill="#04130d" fill-rule="evenodd"/></svg><span>BebraSoft<b>AI</b></span></a><nav class="nav"><a href="../../#apps">All apps</a><a class="opt" href="../../#contact">Contact</a></nav><button class="theme-btn" type="button" aria-label="Toggle color theme"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2 12h2M20 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.500 14.500A8.500 8.500 0 0 1 9.500 3.500a8.500 8.500 0 1 0 11 11z"/></svg></button></div></header>
+<div class="doc-shell">
+<nav class="toc" aria-label="On this page"><p class="toc-title">On this page</p><ol><li><a href="#overview">Overview</a></li><li><a href="#metal-detector-sensor-data">Magnetometer &amp; Metal Detection</a></li><li><a href="#rock-identification-ai">Rock &amp; Mineral AI Identification</a></li><li><a href="#gold-market-prices">Precious Metal Spot Prices</a></li><li><a href="#information-on-your-device">On-Device Storage &amp; Deletion</a></li><li><a href="#third-party-services-ads-analytics">Third-Party Services, Ads &amp; Analytics</a></li><li><a href="#in-app-purchases-subscriptions">In-App Purchases &amp; Subscriptions</a></li><li><a href="#childrens-privacy">Children's Privacy</a></li><li><a href="#contact-us">Contact Us</a></li></ol></nav>
+<main id="content">
+<img class="doc-icon" src="../../assets/icons/metal-detector.webp" alt="" width="72" height="72">
+<p class="crumb"><a href="../../">BebraSoftAI</a> / Metal Detector &amp; Rock ID</p>
+<h1>Privacy Policy</h1>
+<p class="muted">Metal Detector &amp; Rock ID (Android app, package <code>com.bebrasoftai.metaldetector</code>). Effective date: November 20, 2026. <a href="ru.html">Русская версия</a></p>
+
+<p>This privacy policy explains how Metal Detector &amp; Rock ID ("the app", "we", "our") handles your information. The app is developed by BebraSoftAI. Contact: <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>.</p>
+
+<h2 id="overview">Overview</h2>
+<p>We believe in privacy by design. The app does not require account creation, registration, or login. Most core functionality (metal detection, magnetic field measurement, history, and preferences) works entirely offline on your device. When using online features (rock identification powered by AI, spot precious metal quotes, and license checks), data is transmitted securely as described below.</p>
+
+<h2 id="metal-detector-sensor-data">Magnetometer &amp; Metal Detection</h2>
+<p>The metal detection feature reads electromagnetic field levels using your phone's built-in hardware magnetic sensor (magnetometer):</p>
+<ul>
+  <li>Sensor readings, tare baselines, sensitivity adjustments, audio tone synthesis, and vibration feedback are computed strictly on-device in real time.</li>
+  <li>Sensor readings are never transmitted to our servers or any third parties.</li>
+</ul>
+
+<h2 id="rock-identification-ai">Rock &amp; Mineral AI Identification</h2>
+<p>The optional rock, mineral, and stone identification feature uses computer vision and Google Gemini generative artificial intelligence:</p>
+<ul>
+  <li><strong>Camera &amp; Gallery:</strong> Camera permission (<code>android.permission.CAMERA</code>) is requested only when you choose to take a photo of a specimen. You may also select a photo from your gallery using the Android photo picker.</li>
+  <li><strong>Data Transmission:</strong> When you submit a specimen for identification, the image is compressed and sent over an encrypted HTTPS connection to our backend server on Cloudflare Workers, which routes it to the Google Gemini API to identify the stone, compute confidence levels, and return descriptive geological properties.</li>
+  <li><strong>No Storage of Photos:</strong> Our server does not store your photos. Photos are processed in memory and discarded immediately upon response.</li>
+  <li><strong>Gemini Enterprise Terms:</strong> We use Google's paid commercial Gemini API. Under Google's API terms, Google does not use prompts or photos submitted to paid enterprise endpoints to train or improve its AI models.</li>
+  <li><strong>Age Requirement:</strong> You must be 18 years of age or older to use the AI photo identification feature.</li>
+</ul>
+
+<h2 id="gold-market-prices">Precious Metal Spot Prices</h2>
+<p>The Gold tab displays spot market prices and historical trends for gold, silver, platinum, and palladium. Market quotes are fetched anonymously via our server. No personal data or device identifiers are sent with price quote requests.</p>
+
+<h2 id="information-on-your-device">On-Device Storage &amp; Deletion</h2>
+<p>The following data is stored locally in private application storage on your device:</p>
+<ul>
+  <li>Saved metal detector scans and your custom notes.</li>
+  <li>Saved rock identification history and thumbnails.</li>
+  <li>User preferences (measurement units &mu;T/mG, sound, vibration, sensitivity, dark/light theme, and language).</li>
+</ul>
+<p>You can delete all locally stored records at any time directly inside the app by opening Settings and tapping <strong>"Delete my data"</strong>, or by clearing the app data in Android system settings.</p>
+
+<h2 id="third-party-services-ads-analytics">Third-Party Services, Ads &amp; Analytics</h2>
+<p>The app integrates trusted Google developer SDKs:</p>
+<ul>
+  <li><strong>Google AdMob:</strong> The free version displays ads. AdMob and its advertising partners collect advertising identifiers (Android Advertising ID), IP address (for coarse geographic location), and diagnostics to deliver non-personalized or personalized ads (subject to user consent where applicable) and measure ad performance. The app strictly contains no banner ads.</li>
+  <li><strong>Firebase Analytics &amp; Crashlytics:</strong> Used to monitor stability, catch crashes, and analyze aggregate feature adoption. These services collect anonymous diagnostics, performance metrics, and device models.</li>
+  <li><strong>Firebase App Check &amp; Play Integrity:</strong> Used to verify that API requests originate from legitimate, unmodified app binaries installed via Google Play to protect API quotas against abuse.</li>
+</ul>
+
+<h2 id="in-app-purchases-subscriptions">In-App Purchases &amp; Subscriptions</h2>
+<p>We offer optional Pro subscriptions (AI Plus) and Lifetime licenses via Google Play Billing. All financial transactions and payment data are handled securely and exclusively by Google Play. We never receive or store your credit card or billing details.</p>
+
+<h2 id="childrens-privacy">Children's Privacy</h2>
+<p>The app is intended for general audiences aged 18 and older. We do not knowingly collect personal information from children.</p>
+
+<h2 id="contact-us">Contact Us</h2>
+<p>If you have questions or requests regarding this Privacy Policy, please contact our team at: <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>.</p>
+</main>
+</div>
+<footer class="footer"><div class="footer-in"><p>&copy; 2026 BebraSoftAI. All rights reserved.</p><p><a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a></p></div></footer>
+</body>
+</html>
