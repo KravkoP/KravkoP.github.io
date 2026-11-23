@@ -21,7 +21,7 @@
 <p class="crumb"><a href="../../">BebraSoftAI</a> / AI Private Browser</p>
 <h1>Privacy Policy — AI Private Browser</h1>
 <p class="meta">
-<strong>Effective date:</strong> November 6, 2026<br>
+<strong>Effective date:</strong> November 23, 2026<br>
 <strong>Developer:</strong> BebraSoftAI<br>
 <strong>Contact:</strong> <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>
 </p>
@@ -45,18 +45,19 @@
 <h2 id="3-ai-page-assistant">3. AI page assistant</h2>
 <p>Nothing is sent unless you open the assistant and agree. When you do:</p>
 <ul>
-<li>The visible text of the page (up to 12,000 characters), its title and your questions are sent to our server (Cloudflare Workers) and to the Google Gemini API;</li>
+<li>The visible text of the page (up to 12,000 characters, or 60,000 with Premium), its title and your questions are sent to our server (Cloudflare Workers) and to the Google Gemini API;</li>
 <li>The page address is not sent, and the assistant does not read pages with a password field;</li>
-<li>Our server does not store this text;</li>
+<li>Our server does not store this text or your questions;</li>
 <li>We use Gemini's paid tier: Google does not use the text and answers to improve its products, and keeps them for a limited time to detect violations of its policies and as the law requires. See https://aistudio.google.com/docs/terms;</li>
 <li>Avoid using the assistant on pages with personal or confidential information;</li>
 <li>The assistant is not offered in countries where Google does not provide the Gemini API.</li>
 </ul>
+<p>To count the daily limit and keep the assistant from being abused, the App also sends an app installation identifier (Firebase Installations) and a Firebase App Check token (Google Play Integrity) that proves the request comes from this App. Our server keeps them, and your IP address, only as irreversible hashes: the daily counter of an installation is deleted about 90 days after its last use, and the short-term abuse counters within about two days. Our request log holds technical data only (time, country, size, cost, result), never the text, your IP address or these identifiers.</p>
 <p>You can report an AI answer in the App. If you choose to report by email, the answer goes to us by email.</p>
 
 <h2 id="4-ads-purchases-and-analytics">4. Ads, purchases and analytics</h2>
-<p>The App shows ads from Google AdMob in its own screens. AdMob and its partners may collect the advertising ID, device data and approximate location from your IP address; in regions where it is required you are asked for consent, and you can change it in Settings. Ads are not inserted into websites.</p>
-<p>Purchases are processed by Google Play.</p>
+<p>The App shows ads from Google AdMob in its own screens. AdMob and its mediation partners (AppLovin, Meta Audience Network, Unity Ads, Liftoff (Vungle), Mintegral and Pangle) may collect the advertising ID, device data, ad interactions and approximate location from your IP address; in regions where it is required you are asked for consent, and you can change it in Settings. Ads are not inserted into websites.</p>
+<p>Purchases and subscriptions are processed by Google Play. If you have Premium, the App sends its Google Play purchase token to our server, which checks it with Google Play to apply your Premium limits. The server keeps the token, the subscription status and the hashes of the installations using it, and checks them again with Google Play about once a day while you use the assistant. The record is deleted when Google reports that the subscription has ended, or automatically about 120 days after it was last confirmed.</p>
 <p>The App may use Firebase Analytics and Crashlytics for usage events and crash reports. These never include the pages you open, your searches or the text you send to the assistant.</p>
 
 <h2 id="5-permissions">5. Permissions</h2>
@@ -66,7 +67,7 @@
 <p>The App is not directed at children under 13.</p>
 
 <h2 id="7-deleting-your-data">7. Deleting your data</h2>
-<p>Settings &gt; Clear browsing data removes cookies, site data and cache. Uninstalling the App removes everything it stored, including downloaded files. We hold no account for you.</p>
+<p>Settings &gt; Clear browsing data removes cookies, site data and cache. Uninstalling the App removes everything it stored, including downloaded files. We hold no account for you. The server records described above are deleted automatically on the terms given there; you can ask about them at <a href="mailto:bebrasoftai@gmail.com">bebrasoftai@gmail.com</a>. Uninstalling does not cancel a subscription: cancel it in Google Play.</p>
 
 <h2 id="8-changes">8. Changes</h2>
 <p>Changes to this policy are published at this address with a new date.</p>
